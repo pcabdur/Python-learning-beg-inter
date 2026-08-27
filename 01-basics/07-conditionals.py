@@ -41,3 +41,17 @@ if pasws=="212":
     print("succes")
 else:
     print("bruh gtfo ")
+
+
+
+
+age = 20
+has_id = True
+
+if age >= 18:
+    if has_id:
+        print("Entry allowed")
+    else:
+        print("You need an ID")
+else:
+    print("You are too young")
