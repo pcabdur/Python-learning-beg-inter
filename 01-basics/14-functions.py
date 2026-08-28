@@ -129,11 +129,25 @@ def celsius_to_fahrenheit(celsius):
 print("far",celsius_to_fahrenheit(int(input())))
 
 
-def calculate_average():
+def calculate_average(marks):
+    sum=0
 
-    ##map is used to taransforsm a list  based on a function 
-    marks=list(map(int,input().split(","," ")))
-    print(marks)
+    for i in marks:
+        sum+=i
+    return  sum/len(marks)
+
+def grade(avg):
+    if avg>90:
+        print("A")
+    elif avg>80:
+        print("B")
+
+    
 calculate_average()
+
+##map is used to taransforsm a list  based on a function 
+    
+marks=list(map(int,input().split(", ")))
+calculate_average(marks)
 
 
